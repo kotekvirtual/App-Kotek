@@ -123,12 +123,12 @@ import Layout from "../layouts/Layout.astro";
 			  </div>
 			  <div class="mobile-text">
 				<ul class="mobile-ul">
-					<li class="ventanaMovilA">1. Planta 3 - A | 3 dormitorios <br> &nbsp; &nbsp; 220.000€ | 75m²<span class="ventanaMovilA">Ver Ficha</span></li>
-					<li class="detalle-par ventanaMovilB">2. Planta 3 - B - 3 dormitorios <br> &nbsp; &nbsp; 220.000€ | 75m²<span class="ventanaMovilB">Ver Ficha</span></li>
-					<li class="ventanaMovilC">3. Planta 2 - A - 2 dormitorios <br> &nbsp; &nbsp; 220.000€ | 75m²<span class="ventanaMovilC">Ver Ficha</span></li>
-					<li class="detalle-par ventanaMovilD">4. Planta 2 - B - 3 dormitorios <br> &nbsp; &nbsp; 220.000€ | 75m²<span class="ventanaMovilD">Ver Ficha</span></li>
-					<li class="ventanaMovilE">5. Planta 1 - A - 2 dormitorios <br> &nbsp; &nbsp; 220.000€ | 75m²<span class="ventanaMovilE">Ver Ficha</span></li>
-					<li class="detalle-par ventanaMovilF">6. Planta 1 - B - 2 dormitorios <br> &nbsp; &nbsp; 220.000€ | 75m²<span class="ventanaMovilF">Ver Ficha</span></li>
+					<li class="ventanaMovilA">1. Planta 3 - A | 3 dormitorios <br> &nbsp; &nbsp; 220.000€ | 75m²<span class="ventanaMovilA textoDisponible">Disponible</span></li>
+					<li class="detalle-par ventanaMovilB">2. Planta 3 - B - 3 dormitorios <br> &nbsp; &nbsp; 220.000€ | 75m²<span class="ventanaMovilB textoVendido">Vendido</span></li>
+					<li class="ventanaMovilC">3. Planta 2 - A - 2 dormitorios <br> &nbsp; &nbsp; 220.000€ | 75m²<span class="ventanaMovilC textoDisponible">Disponible</span></li>
+					<li class="detalle-par ventanaMovilD">4. Planta 2 - B - 3 dormitorios <br> &nbsp; &nbsp; 220.000€ | 75m²<span class="ventanaMovilD textoDisponible">Disponible</span></li>
+					<li class="ventanaMovilE">5. Planta 1 - A - 2 dormitorios <br> &nbsp; &nbsp; 220.000€ | 75m²<span class="ventanaMovilE textoVendido">Vendido</span></li>
+					<li class="detalle-par ventanaMovilF">6. Planta 1 - B - 2 dormitorios <br> &nbsp; &nbsp; 220.000€ | 75m²<span class="ventanaMovilF textoDisponible">Disponible</span></li>
 				</ul>
 			</div>
 			
@@ -365,6 +365,14 @@ import Layout from "../layouts/Layout.astro";
     }
     .modal-ficha {
     }
+	.textoDisponible{
+		color: #75A93A;
+		font-weight: 600;
+	}
+	.textoVendido{
+		color: red;
+		font-weight: 600;
+	}
     dialog {
         height: calc(100vh - 16px);
         border: none;
